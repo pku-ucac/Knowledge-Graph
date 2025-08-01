@@ -1,37 +1,152 @@
 [
     {
-        "id": "0.6.1",
-        "name": "能量",
+        "id": "n1/1.1",
+        "name": "广义坐标.md",
         "type": "node",
-        "path": "理论力学/6能量.md"
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/1.1#广义坐标.md"
     },
     {
-        "id": "0.7.1",
-        "name": "动量",
+        "id": "n1/1.1.1",
+        "name": "运动方程习题.md",
         "type": "node",
-        "path": "理论力学/7动量.md"
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/1.1.1#运动方程习题.md"
     },
     {
-        "id": "0.8.1",
-        "name": "质心",
+        "id": "n1/11.1",
+        "name": "一维运动.md",
         "type": "node",
-        "path": "理论力学/8质心.md"
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/11.1#一维运动.md"
     },
     {
-        "id": "0.9.1",
-        "name": "动量矩",
+        "id": "n1/12.1",
+        "name": "根据振动周期确定势能.md",
         "type": "node",
-        "path": "理论力学/9动量矩.md"
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/12.1#根据振动周期确定势能.md"
     },
     {
-        "id": "1.2.1",
-        "name": "守恒定律",
-        "type": "group",
-        "nodes": [
-            "0.6.1",
-            "0.7.1",
-            "0.8.1",
-            "0.9.1"
-        ]
+        "id": "n1/13.1",
+        "name": "约化质量.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/13.1#约化质量.md"
+    },
+    {
+        "id": "n1/14.1",
+        "name": "有心力场内的运动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/14.1#有心力场内的运动.md"
+    },
+    {
+        "id": "n1/15.1",
+        "name": "开普勒问题.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/15.1#开普勒问题.md"
+    },
+    {
+        "id": "n1/2.1",
+        "name": "最小作用量原理.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/2.1#最小作用量原理.md"
+    },
+    {
+        "id": "n1/21.1",
+        "name": "一维自由振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/21.1#一维自由振动.md"
+    },
+    {
+        "id": "n1/22.1",
+        "name": "强迫振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/22.1#强迫振动.md"
+    },
+    {
+        "id": "n1/23.1",
+        "name": "多自由度系统振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/23.1#多自由度系统振动.md"
+    },
+    {
+        "id": "n1/24.1",
+        "name": "分子振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/24.1#分子振动.md"
+    },
+    {
+        "id": "n1/25.1",
+        "name": "阻尼振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/25.1#阻尼振动.md"
+    },
+    {
+        "id": "n1/26.1",
+        "name": "有摩擦的强迫振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/26.1#有摩擦的强迫振动.md"
+    },
+    {
+        "id": "n1/27.1",
+        "name": "参变共振.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/27.1#参变共振.md"
+    },
+    {
+        "id": "n1/28.1",
+        "name": "非简谐振动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/28.1#非简谐振动.md"
+    },
+    {
+        "id": "n1/29.1",
+        "name": "非线性振动中的共振.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/29.1#非线性振动中的共振.md"
+    },
+    {
+        "id": "n1/3.1",
+        "name": "伽利略相对性原理.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/3.1#伽利略相对性原理.md"
+    },
+    {
+        "id": "n1/30.1",
+        "name": "快速振动场中的运动.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/30.1#快速振动场中的运动.md"
+    },
+    {
+        "id": "n1/4.1",
+        "name": "自由质点的拉格朗日函数.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/4.1#自由质点的拉格朗日函数.md"
+    },
+    {
+        "id": "n1/5.1",
+        "name": "质点系的拉格朗日函数.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/5.1#质点系的拉格朗日函数.md"
+    },
+    {
+        "id": "n1/6.1",
+        "name": "能量.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/6.1#能量.md"
+    },
+    {
+        "id": "n1/7.1",
+        "name": "动量.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/7.1#动量.md"
+    },
+    {
+        "id": "n1/8.1",
+        "name": "质心.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/8.1#质心.md"
+    },
+    {
+        "id": "n1/9.1",
+        "name": "角动量.md",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/9.1#角动量.md"
     }
 ]
