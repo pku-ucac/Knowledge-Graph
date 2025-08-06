@@ -4,7 +4,7 @@ import os
 import pathlib
 
 input_path = pathlib.Path(sys.argv[1])
-current_path = pathlib.Path(os.getcwd())
+current_path = pathlib.Path(os.path.realpath(sys.argv[0])).parent
 id_prefix = input_path.name.split('#')[0]
 
 output_filename = "output.json"

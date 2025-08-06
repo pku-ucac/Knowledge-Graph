@@ -48,10 +48,40 @@
         "path": "E:/学习/Knowledge-Graph/1#理论力学/15.1#开普勒问题.md"
     },
     {
+        "id": "n1/16.1",
+        "name": "质点分裂",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/16.1#质点分裂.md"
+    },
+    {
+        "id": "n1/17.1",
+        "name": "质点弹性碰撞",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/17.1#质点弹性碰撞.md"
+    },
+    {
+        "id": "n1/18.1",
+        "name": "质点散射",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/18.1#质点散射.md"
+    },
+    {
+        "id": "n1/19.1",
+        "name": "卢瑟福公式",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/19.1#卢瑟福公式.md"
+    },
+    {
         "id": "n1/2.1",
         "name": "最小作用量原理",
         "type": "node",
         "path": "E:/学习/Knowledge-Graph/1#理论力学/2.1#最小作用量原理.md"
+    },
+    {
+        "id": "n1/20.1",
+        "name": "小角度散射",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/20.1#小角度散射.md"
     },
     {
         "id": "n1/21.1",
@@ -118,6 +148,12 @@
         "name": "快速振动场中的运动",
         "type": "node",
         "path": "E:/学习/Knowledge-Graph/1#理论力学/30.1#快速振动场中的运动.md"
+    },
+    {
+        "id": "n1/31.1",
+        "name": "角速度",
+        "type": "node",
+        "path": "E:/学习/Knowledge-Graph/1#理论力学/31.1#角速度.md"
     },
     {
         "id": "n1/4.1",
