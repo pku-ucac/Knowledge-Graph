@@ -1,0 +1,152 @@
+# 40 哈密顿方程①
+
+利用拉格朗日函数和由它导出的拉格朗日方程来表述力学规律，其先决条件是可以用广义坐标和广义速度来描述系统的力学状态。然而，这种描述不是唯一可能的方式。利用广义坐标和广义动量来描述系统状态，具有一系列优点，特别是在研究某些力学普遍问题的时候。于是，这就产生了建立与此相应的运动方程的问题。
+
+通过数学上著名的勒让德变换，可以从一组独立变量变换到另一组。在现在这种情况下，这个变换可概括如下。
+
+作为坐标和速度的函数的拉格朗日函数，其全微分等于
+
+$$
+\mathrm{d}L
+= \sum_{i} \frac{\partial L}{\partial q_i}\,\mathrm{d}q_i
++ \sum_{i} \frac{\partial L}{\partial \dot q_i}\,\mathrm{d}\dot q_i .
+$$
+
+**①** 读者可能会发现下表是非常有用的，该表列出了本书中所用术语与其它英语文献中常用术语之间的某些差别。
+
+| 本书           | 其它文献                         |
+|----------------|----------------------------------|
+| 最小作用量原理 | 哈密顿原理                       |
+| 莫培督原理     | 最小作用量原理 / 莫培督原理       |
+| 作用量         | 哈密顿主函数                     |
+| 简约作用量     | 作用量                           |
+
+因为按定义导数 \(\partial L/\partial \dot q_i\) 是广义动量 \(p_i\)，又根据拉格朗日方程有 \(\partial L/\partial q_i=\dot p_i\)；所以上面这个表达式可以写成
+
+$$
+\mathrm{d}L
+= \sum_i \dot p_i\,\mathrm{d}q_i + \sum_i p_i\,\mathrm{d}\dot q_i .
+$$
+
+现在将 (40.1) 的第二项写成
+
+$$
+\sum_i p_i\,\mathrm{d}\dot q_i
+= \mathrm{d}\!\left(\sum_i p_i\dot q_i\right) - \sum_i \dot q_i\,\mathrm{d}p_i ,
+$$
+
+将全微分 \(\mathrm{d}\!\left(\sum_i p_i\dot q_i\right)\) 移到等式左端并改变符号，由 (40.1) 可得
+
+$$
+\mathrm{d}\!\left(\sum_i p_i\dot q_i - L\right)
+= - \sum_i \dot p_i\,\mathrm{d}q_i + \sum_i \dot q_i\,\mathrm{d}p_i .
+$$
+
+微分的变量是用广义坐标和广义动量表示的系统的能量（参见 §6），称为系统的哈密顿函数
+
+$$
+H(p,q,t) = \sum_i p_i \dot q_i - L .
+$$
+
+由其中独立变量为坐标和动量的微分等式
+
+$$
+\mathrm{d}H
+= - \sum_i \dot p_i\,\mathrm{d}q_i + \sum_i \dot q_i\,\mathrm{d}p_i ,
+$$
+
+可以得出方程
+
+$$
+\dot q_i = \frac{\partial H}{\partial p_i},
+\qquad
+\dot p_i = -\,\frac{\partial H}{\partial q_i}.
+$$
+
+这些就是用变量 \(p\) 和 \(q\) 表示的所要求的运动方程，称为哈密顿方程。它们是关于 \(2s\) 个未知函数 \(p_i(t)\) 和 \(q_i(t)\) 的 \(2s\) 个一阶微分方程组，代替拉格朗日方法的 \(s\) 个二阶方程。由于这些方程的形式简单并且对称，也称之为正则方程。
+
+哈密顿函数对时间的全导数为
+
+$$
+\frac{\mathrm{d}H}{\mathrm{d}t}
+= \frac{\partial H}{\partial t}
++ \sum_i \frac{\partial H}{\partial q_i}\,\dot q_i
++ \sum_i \frac{\partial H}{\partial p_i}\,\dot p_i .
+$$
+
+将方程 (40.4) 的 \(\dot q_i,\ \dot p_i\) 代入，上式后两项相互抵消，因此
+
+$$
+\frac{\mathrm{d}H}{\mathrm{d}t} = \frac{\partial H}{\partial t} .
+$$
+
+特别地，如果哈密顿函数不显含时间，则 \(\mathrm{d}H/\mathrm{d}t = 0\)，即得到能量守恒定律。
+
+除了动力学变量 \((q,\dot q)\) 或者 \((q,p)\)，拉格朗日函数和哈密顿函数还包含各种参数，这些参数与力学系统自身的性质或者作用于其上的外场有关。设 \(\lambda\) 是这样的参数，我们将它看作变量，则代替表达式 (40.1)，有
+
+$$
+\mathrm{d}L
+= \sum_i \dot p_i\,\mathrm{d}q_i
++ \sum_i p_i\,\mathrm{d}\dot q_i
++ \frac{\partial L}{\partial \lambda}\,\mathrm{d}\lambda ,
+$$
+
+而 (40.3) 变为
+
+$$
+\mathrm{d}H
+= - \sum_i \dot p_i\,\mathrm{d}q_i
++ \sum_i \dot q_i\,\mathrm{d}p_i
+- \frac{\partial L}{\partial \lambda}\,\mathrm{d}\lambda .
+$$
+
+由此可得拉格朗日函数和哈密顿函数对参数 \(\lambda\) 的偏导数之间的关系
+
+$$
+\left(\frac{\partial H}{\partial \lambda}\right)_{p,q}
+= - \left(\frac{\partial L}{\partial \lambda}\right)_{\dot q, q} .
+$$
+
+这个结果可以表示为另一种形式。设拉格朗日函数的形式为 \(L=L_0+L'\)，其中 \(L'\) 是对函数 \(L_0\) 很小的修正。哈密顿函数 \(H=H_0+H'\) 的相应附加项与 \(L'\) 的关系为
+
+$$
+\left(H'\right)_{p,q} = - \left(L'\right)_{\dot q, q} .
+$$
+
+应该注意到，在从 (40.1) 到 (40.3) 的变换中，我们没有写出带 \(\mathrm{d}t\) 的项，即没有考虑拉格朗日函数可能显含时间的情况。这是因为在那里时间仅仅是一个参数，不参与所做的变换。类似于公式 (40.6)，拉格朗日函数和哈密顿函数对时间的偏导数之间的关系为
+
+$$
+\left(\frac{\partial H}{\partial t}\right)_{p,q}
+= - \left(\frac{\partial L}{\partial t}\right)_{\dot q, q} .
+$$
+
+# 习题
+
+**习题 1** 试求在笛卡儿坐标、柱坐标和球坐标下一个质点的哈密顿函数。答案：在笛卡儿坐标 \(x,y,z\) 下
+$$
+H = \frac{1}{2m}\left(p_x^2 + p_y^2 + p_z^2\right) + U(x,y,z) .
+$$
+
+在柱坐标 \(r,\varphi,z\) 下
+$$
+H = \frac{1}{2m}\left(p_r^2 + \frac{p_\varphi^{\,2}}{r^2} + p_z^2\right) + U(r,\varphi,z) .
+$$
+
+在球坐标 \(r,\theta,\varphi\) 下
+$$
+H = \frac{1}{2m}\left(p_r^2 + \frac{p_\theta^{\,2}}{r^2} + \frac{p_\varphi^{\,2}}{r^2\sin^2\theta}\right) + U(r,\theta,\varphi) .
+$$
+
+**习题 2** 试求质点在匀速转动参考系中的哈密顿函数。解：用动量 \(\mathbf p\) 表示速度 \(\mathbf v\)，有
+$$
+H = \frac{\mathbf p^{\,2}}{2m} - \boldsymbol{\Omega}\cdot(\mathbf r \times \mathbf p) + U .
+$$
+
+**习题 3** 设有一个由质量为 \(M\) 的质点和 \(n\) 个质量为 \(m\) 的质点组成的系统，不考虑系统质心的运动，试求这个系统的哈密顿函数（参见 §13 习题）。
+
+记各小质点的动量为 \(p_\alpha\)（\(\alpha=1,\dots,n\)），则
+$$
+H = \frac{1}{2m}\sum_{\alpha} p_\alpha^{\,2}
++ \frac{1}{2M}\left(\sum_{\alpha} p_\alpha\right)^{2}
++ U .
+$$
