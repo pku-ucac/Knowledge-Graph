@@ -1,0 +1,129 @@
+# $\ S 5 1$ 浸渐不变量守恆的准确度
+
+利用 (50.10) 形式的运动方程可以进一步证明作用变量是浸渐不变量.
+
+函数 $S _ { 0 } { \left( { q , I ; \lambda } \right) }$ 不是 $q$ 的单值函数，当坐标变化回到初始值时， $S _ { 0 }$ 增加 $2 \pi I$ 的整数倍.然而，导数 (50.9) 是单值函数，因为求导是在 $I$ 为常值时进行的，$S _ { 0 }$ 的增量不出现于求导结果中.像任何单值函数一样，当 $\varLambda$ 用角变量 $\infty$ 表示时是一个周期函数.周期函数的导数 $\partial \varLambda / \partial \omega$ 对周期的平均值等于零.所以对方程 (50.10) 取平均并将 $\dot { \lambda }$ 移出平均值之外（当 $\lambda$ 仅缓慢变化时）,可得
+
+$$
+\overline { { \dot { I } } } = - \overline { { \left( \frac { \partial \Lambda } { \partial \ w } \right) } } _ { I } \sp \dot { \lambda } = 0 ,
+$$
+
+于是结论得证①.
+
+利用运动方程 (50.10) 和 (50.11) 可以研究浸渐不变量守恒的准确度.我们可以将这个问题表述如下: 设当 $t ^ {  - \infty }$ 和 $t \to + \infty$ 时，参数 $\lambda \left( \mathbf { \sigma } _ { t } \right)$ 趋向于定常极限值 $\lambda _ { - }$ 和 $\lambda _ { + }$ ,浸渐不变量 $t = - \infty$ 时) 的初值 $I _ { - }$ 给定，我们求 $t = + \infty$ 时的增量 $\Delta I = I _ { \mathrm { ~ + ~ } } - I _ { \mathrm { ~ - ~ } }$
+
+由方程 (50.10) 有
+
+$$
+\Delta I = - \int _ { - \infty } ^ { + \infty } \frac { \partial \varLambda } { \partial \ w } \dot { \lambda } \ \mathrm { d } t .
+$$
+
+前面已经证明过 $\varLambda$ 是变量 $_ { w }$ 的周期函数（周期为 $2 \pi$ ),我们将它展开为傅里叶级数：
+
+$$
+\Lambda = \sum _ { l = - \infty } ^ { \infty } \mathrm { e } ^ { \imath l w } \varLambda _ { l }
+$$
+
+由于 $\varLambda$ 为实数，展开式的系数满足关系 $\boldsymbol { \Lambda } _ { - l } = \boldsymbol { \Lambda } _ { l } ^ { * }$ .由此得
+
+$$
+\frac { \partial \varLambda } { \partial \ v } = \ \sum _ { l = - \infty } ^ { \infty } \mathrm { i } \ l \mathrm { e } ^ { \mathrm { i } l \ w } \varLambda _ { l } \ = \ 2 \mathrm { R e } \sum _ { l = 1 } ^ { \infty } \mathrm { i } l \mathrm { e } ^ { \mathrm { i } l \ w } \varLambda _ { l } .
+$$
+
+当 $\dot { \lambda }$ 足够小时，导数 $\dot { \varpi }$ 是正的 (它的符号与 $\omega$ 的符号相同，参见 (50.11))，即 $_ { \infty }$ 是时间 $t$ 的单调函数.因此在将 (51.2) 从对 $t$ 积分变换为对 $\boldsymbol { \varpi }$ 积分时,积分限不变,即
+
+$$
+\Delta I = - \int _ { - \infty } ^ { + \infty } \frac { \partial \Lambda } { \partial w } \frac { \mathrm { d } \lambda } { \mathrm { d } t } \frac { \mathrm { d } t } { \mathrm { d } w } \mathrm { d } w .
+$$
+
+将 (51.4) 代入此式并将 $_ { w }$ 在形式上看作复变量来进行积分变换.假设被积函数对于实的 $\boldsymbol { \varpi }$ 没有奇点，将积分路径从实轴移到该复变量 $_ { \mathfrak { W } }$ 的上半平面.这时回路绕过被积函数的奇点“连接”，形成围绕奇点的环路，如图 56 所示.
+
+设 $\ w _ { 0 }$ 是最接近实轴的奇点，即有最小 (正的) 虚部的奇点.在积分 (51.5) 中这个点的邻域的贡献是主要的，并且级数 (51.4) 的每一项给出包含因子 $\exp ( { \mathrm { ~ - ~ } l \operatorname { I m } { \mathrm { w } _ { 0 } } } )$ 的贡献.又仅保留负指数有最小量值的项 (即 $l = 1$ 的项）,可得 $\textcircled{1}$
+
+![](images/52949a3a0105e626b191f2379223cab41fc500a3fcae187549f696ca932e902a.jpg)
+
+$$
+\Delta I \sim \exp ( { - \operatorname { I m } { \boldsymbol { w } _ { 0 } } } ) .
+$$
+
+设 $t _ { 0 }$ 是相应於奇点 $\ w _ { 0 }$ 的时刻 (复数！)： 图 56${ \boldsymbol { \varpi } } \left( { \boldsymbol { t } } _ { 0 } \right) = { \boldsymbol { \ w } } _ { 0 }$ 一般来说， $\mid t _ { 0 } \mid$ 的量级与系统参数变化的特征时间相同，我们用 $\tau$
+
+表示这个时间 $\textcircled{1}$ .在 (51.6) 中指数的量级为
+
+$$
+\mathrm { I m } \mathrm { { z } } \mathrm { { 0 } } \mathrm { { - } } \omega \tau \mathrm { { - } } \tau / T .
+$$
+
+按照假设， $\tau \gg T$ ,因此这个指数很大.于是差值 $I _ { \mathrm { ~ + ~ } } - I _ { \mathrm { ~ - ~ } }$ 随着系统参数的变化率减小而指数衰减②.
+
+为了确定关于 $T / \tau$ 的一阶近似下的 ${ \boldsymbol { \varpi } } _ { 0 }$ （即在指数中只保留 $( T / \tau ) ^ { - 1 }$ 量级的项），可以在方程 (50.11) 中略去含 $\dot { \lambda }$ 的小量项，即写成
+
+$$
+\frac { \mathrm { d } \boldsymbol { \mathrm { w } } } { \mathrm { d } t } = \boldsymbol { \omega } \big ( \boldsymbol { I } , \lambda \big ( \boldsymbol { t } \big ) \big ) ,
+$$
+
+并且将函数 $\omega \big ( I , \lambda \big ( \textit { t } \big ) \big )$ 的自变量 $I$ 取为一个常数值，比如 $I _ { - }$ .那么
+
+$$
+\boldsymbol { w } _ { 0 } = \int ^ { t _ { 0 } } \boldsymbol { \omega } ( I , \lambda ( t ) ) \mathrm { d } t
+$$
+
+（积分下限可以取任意实数值 $t$ ,因为它对所要求的 $\boldsymbol { \varpi } _ { 0 }$ 的虚部没有影响)③.
+
+由 (51.8) 得到的 $\dot { \ w }$ (并取级数 (51.4) 中的一项作为 $\partial \varLambda / \partial \ w )$ ,积分 (51.5) 变为
+
+$$
+\Delta I \sim \mathrm { R e } \int \mathrm { i e } ^ { \mathrm { i } w } \frac { \dot { \lambda } \mathrm { ~ d } w } { \omega ( I , \lambda ) } .
+$$
+
+由此可见，关于最接近实轴而需要考虑的奇点是函数 $\dot { \lambda }$ 和 $1 / \omega \left( t \right)$ 的奇点（极点、支点）.这里需要记住的是， $\Delta I$ 为指数小量的结论是与上述函数没有实奇点的假设相关的.
+
+# 习 题
+
+习题 1 设简谐振子的频率按规律
+
+$$
+\omega ^ { 2 } = \omega _ { 0 } ^ { 2 } \frac { 1 + \alpha \mathrm { e } ^ { \alpha t } } { 1 + \mathrm { e } ^ { \alpha t } }
+$$
+
+从 $t = - \infty$ 时的值 $\omega _ { - } = \omega _ { 0 }$ 到 $t = \infty$ 时的值 $\omega _ { + } = \sqrt { \alpha } \omega _ { 0 } ( a > 0 , \alpha \ll \omega _ { 0 } )$ 缓慢变化,试估算 $\Delta I$ 的量级 $\textcircled{4}$
+
+解：将频率 $\omega$ 自身取为参数 $\lambda$ ,有
+
+$$
+\frac { \dot { \lambda } } { \omega } = \frac { \alpha } { 2 } \left( \frac { \alpha } { \mathrm { e } ^ { - \alpha t } + \alpha } - \frac { 1 } { \mathrm { e } ^ { - \alpha t } + 1 } \right) .
+$$
+
+当 $\mathrm { e } ^ { - \alpha t } = - 1$ 和 $\mathrm { e } ^ { - \alpha t } = - \alpha$ 时，这个函数有极点.计算积分 $\int \omega \mathrm { d } t$ ，我们发现 $\operatorname { I m } \boldsymbol { \varpi } _ { 0 }$ 的最小值来自於极点之一 $\alpha t _ { 0 } = - \ln ( { } - \alpha )$ ,且为
+
+$$
+\begin{array} { r } { \mathrm { I m } w _ { 0 } = \left\{ \begin{array} { l l } { \omega _ { 0 } \pi / \alpha \quad \left( a > 1 \right) , } \\ { } \\ { \omega _ { 0 } \pi \sqrt { \alpha } / \alpha \quad \left( a < 1 \right) . } \end{array} \right. } \end{array}
+$$
+
+对于简谐振子， $\Lambda \sim \sin 2 \tau \mu$ （参见 $\ S 5 0$ 的习题)，所以级数 (51.3) 约化为两项 ( $\lfloor l =$ $\pm 2 )$ .因此，对简谐振子
+
+$$
+\Delta I \sim \exp ( { - 2 \mathrm { I m } \omega _ { 0 } } ) .
+$$
+
+习题 2 质点在势阱中振动.试求在摩擦力 $f _ { \mathrm { f r } } = - \alpha \ : \dot { x }$ 作用下能量变化规律，其中系数 $\alpha$ 很小， $_ { x }$ 为笛卡儿坐标.
+
+解: 按振动周期平均方程 (25.13),在一阶近似中忽略阻尼.有
+
+$$
+\frac { \overline { { \mathrm { d } E } } } { \mathrm { d } t } = - \overline { { \alpha \dot { x } ^ { 2 } } } = - \frac { \alpha } { T } \int _ { 0 } ^ { T } \dot { x } ^ { 2 } \mathrm { d } t = - \frac { \alpha } { T } \oint \dot { \bar { x } } ^ { 2 } \mathrm { d } t = - \frac { 2 \pi \alpha } { m T } I ( \overline { { E } } ) ,
+$$
+
+其中 $I ( E )$ 是浸渐不变量， $_ m$ 是质点的质量.根据 (49.8),用 $I$ 表示振动周期 $T$ ,求得
+
+$$
+\frac { \mathrm { d } I } { \mathrm { d } \stackrel { \mathrm { \scriptsize ~ E } } { E } } \frac { \mathrm { d } \stackrel { \_ E } { E } } { \mathrm { d } t } = - \frac { \alpha } { m } I .
+$$
+
+积分得
+
+$$
+I ( \overline { { E } } ) = I \big ( E _ { 0 } \big ) \mathrm { e x p } \Bigg ( - \frac { \alpha } { m } t \Bigg ) .
+$$
+
+这个公式隐含地确定了 $\overline { { E } } \left( \mathbf { \Lambda } _ { t } \right)$ .对于简谐振子，这个公式变为 (25.5).这个解在 $\alpha T / m \ll 1$ 的条件下成立.
