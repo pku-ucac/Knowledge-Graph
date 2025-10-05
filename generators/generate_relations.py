@@ -16,8 +16,7 @@ def get_all_nodes(include, contents):
             nodes.update(get_all_nodes(sub_include, contents))
     return nodes
 
-# filepath = pathlib.Path(sys.argv[1])
-filepath = pathlib.Path("E:/学习/Knowledge-Graph/graphs.json")
+filepath = pathlib.Path(sys.argv[1])
 relationspath = pathlib.Path(os.path.realpath(sys.argv[0])).parent.parent.joinpath("relations.json")
 graphspath = pathlib.Path(os.path.realpath(sys.argv[0])).parent.parent.joinpath("graphs.json")
 
